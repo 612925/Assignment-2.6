@@ -1,0 +1,28 @@
+import java.util.Scanner;
+	 class Acad {
+
+public static void main(String args[])
+{
+StringBuffer sb1 = new StringBuffer();     // two buffers for 
+StringBuffer sb2 = new StringBuffer();
+Scanner s =new Scanner(System.in);
+int a = s.nextInt();
+int b = s.nextInt();
+for (int j = a; j <=b; j++) {                   //Loop runs for a to b
+if(j%2==0)
+{
+sb1.append(j).append(" ");                      //append even numbers to the string buffer 1 
+}
+else
+{
+sb2.append(j).append(" ");                     //append odd numbers to the string buffer 2 
+}
+}
+System.out.println("even numbers are");
+System.out.println(sb1.toString());             //toString  converts string buffer sb1 to string and prints it.
+System.out.println("odd numbers are"); 
+System.out.println(sb2.toString());
+
+s.close();
+}
+}
